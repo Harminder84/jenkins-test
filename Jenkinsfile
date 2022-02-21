@@ -24,7 +24,7 @@ pipeline {
                     }
                     post {
                         always {
-                            jiraSendDeploymentInfo environmentId: 'us-prod-1', environmentName: 'us-prod-1', environmentType: 'Contigency'
+                            jiraSendDeploymentInfo environmentId: 'us-prod-1', environmentName: 'us-prod-1', environmentType: 'production'
                         }
                     }
                 }
