@@ -13,12 +13,12 @@ pipeline {
         }
         stage('deployments') {
             parallel {
-                stage('deploy to stg') {
+                stage('install to stg') {
                     steps {
                         echo 'stg deployment done'
                     }
                 }
-                stage('deploy to prod') {
+                stage('install to prod') {
                     steps {
                         echo 'prod deployment done'
                     }
