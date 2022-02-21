@@ -5,6 +5,11 @@ pipeline {
             steps {
                 echo  'build done'
             }
+            post {
+                 always {
+                     jiraSendBuildInfo()
+                 }
+             }
         }
         stage('deployments') {
             parallel {
