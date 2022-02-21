@@ -8,7 +8,7 @@ pipeline {
         }
         stage('deployments') {
             parallel {
-                stage('install to stg') {
+                stage('deploy to stg') {
                     steps {
                         echo 'stg deployment done'
                     }
