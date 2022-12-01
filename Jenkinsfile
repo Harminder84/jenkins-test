@@ -3,10 +3,11 @@
 pipeline {
     agent  any
     stages {
-       stage('deploy to prod') {
+       stage('code building') {
            steps {
                echo 'prod deployment done'
            }
+       
          
        }
     }
