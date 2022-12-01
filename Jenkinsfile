@@ -8,5 +8,10 @@ pipeline {
                echo 'prod deployment done'
            }
        }
+       post {
+                 always {
+                     jiraSendBuildInfo branch: 'test'
+                 }
+             }
     }
 }
